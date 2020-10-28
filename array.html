@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("Enter word");
+    let array1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let array2 = [ "Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function checkInput(str) {
+        for (let i=0;i<array1.length;i++) {
+            if (str === array1[i]) {
+                console.log(array2[i]);
+            }
+        }
+    }
+    checkInput(input);
+</script>
+</body>
+</html>
